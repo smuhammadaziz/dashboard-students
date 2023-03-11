@@ -25,7 +25,7 @@ export const routes = [
       },
       {
         icon: <UserGroupIcon {...icon} />,
-        name: "Guruhlar",
+        name: "Guruh va darslar",
         path: "/groups",
         element: <Groups />,
       },
@@ -35,6 +35,7 @@ export const routes = [
         path: "/students",
         element: <Students />,
       },
+
       {
         icon: <TableCellsIcon {...icon} />,
         name: "dars jadvali",
@@ -42,16 +43,16 @@ export const routes = [
         element: <Home />,
       },
       {
-        icon: <Cog6ToothIcon {...icon} />,
-        name: "sozlamalar",
-        path: "/settings",
-        element: <Home />,
+        icon: <UserCircleIcon {...icon} />,
+        name: "Ustozlar",
+        path: "/teachers",
+        element: <Students />,
       },
       {
-        icon: <InformationCircleIcon {...icon} />,
-        name: "yordam",
-        path: "/help",
-        element: <Home />,
+        icon: <UserCircleIcon {...icon} />,
+        name: "Uyga vazifalar",
+        path: "/homeworks",
+        element: <Students />,
       },
     ],
   },

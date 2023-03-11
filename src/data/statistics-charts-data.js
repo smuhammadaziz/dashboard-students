@@ -5,8 +5,8 @@ const websiteViewsChart = {
   height: 250,
   series: [
     {
-      name: "Yillik",
-      data: [10, 20, 10, 22, 50, 10, 40],
+      name: "Oylik",
+      data: [15, 20, 10, 25, 35, 20, 40],
     },
   ],
   options: {
@@ -30,8 +30,8 @@ const dailySalesChart = {
   height: 250,
   series: [
     {
-      name: "Oylik",
-      data: [80, 350, 300, 320, 500, 350, 200, 230, 500],
+      name: "Haftalik",
+      data: [450, 600, 350, 250, 100, 290, 370, 230, 500],
     },
   ],
   options: {
@@ -63,13 +63,13 @@ const dailySalesChart = {
 export const statisticsChartsData = [
   {
     color: "blue",
-    title: "Yillik Statistika",
+    title: "Oylik o'zlashtirish",
     footer: "Ohirgi marta 2 kun oldin",
     chart: websiteViewsChart,
   },
   {
-    color: "pink",
-    title: "Oylik Statistika",
+    color: "red",
+    title: "Haftalik o'zlashtirish",
     footer: "Ohirgi marta 1 oy oldin",
     chart: dailySalesChart,
   },

@@ -8,35 +8,35 @@ export const statisticsCardsData = [
   {
     color: "green",
     icon: CircleStackIcon,
-    title: "Oylik To'lovlar",
-    value: "$198k",
+    title: "Oylik O'zlashtirish",
+    value: "+12%",
     footer: {
       color: "text-green-500",
-      value: "+37.8%",
-      label: "Oylik",
+      value: "+12%",
+      label: "ga ortdi",
     },
   },
   {
     color: "blue",
     icon: BanknotesIcon,
-    title: "Budget",
-    value: "$2.4k",
+    title: "Haftalik o'zlashtirish",
+    value: "-2%",
     footer: {
       color: "text-red-500",
-      value: "-2%",
-      label: "Oylik",
+      value: "-8%",
+      label: "ga tushdi",
     },
   },
 
   {
     color: "orange",
     icon: PresentationChartBarIcon,
-    title: "Sof Foyda",
-    value: "$103,430",
+    title: "Reyting",
+    value: "7",
     footer: {
       color: "text-green-500",
-      value: "+11%",
-      label: "Oylik",
+      value: "+12",
+      label: "ta o'ringa ko'tarildi",
     },
   },
 ];

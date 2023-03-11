@@ -19,7 +19,7 @@ export const routes = [
     pages: [
       {
         icon: <HomeIcon {...icon} />,
-        name: "dashboard",
+        name: "Bosh sahifa",
         path: "/home",
         element: <Home />,
       },

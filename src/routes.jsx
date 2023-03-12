@@ -58,12 +58,6 @@ export const routes = [
         path: "/homeworks",
         element: <Homeworks />,
       },
-      {
-        icon: <UserCircleIcon {...icon} />,
-        name: "Uyga vazifalarrr",
-        path: "/groups/lessons/0e9b53ad-0aa3-43a6-bb06-b697efd25fd2",
-        element: <Algebra />,
-      },
     ],
   },
 ];

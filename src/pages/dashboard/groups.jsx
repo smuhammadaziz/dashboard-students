@@ -54,11 +54,9 @@ export function Groups() {
               </Typography>
               <Typography>Description</Typography>
               <Typography>
-                <Button className="mt-6">
-                  <Link to="/groups/lessons/0e9b53ad-0aa3-43a6-bb06-b697efd25fd2">
-                    Darsga o'tish
-                  </Link>
-                </Button>
+                <NavLink to="/dashboard/groups/lessons/0e9b53ad-0aa3-43a6-bb06-b697efd25fd2">
+                  <Button className="mt-6">Darsga o'tish</Button>
+                </NavLink>
               </Typography>
             </CardBody>
             <CardFooter

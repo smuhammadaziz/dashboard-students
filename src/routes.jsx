@@ -10,6 +10,7 @@ import {
 import { Home, Groups, Students } from "@/pages/dashboard";
 import Schedule from "./pages/dashboard/schedule";
 import Homeworks from "./pages/dashboard/homeworks";
+import Teachers from "./pages/dashboard/teachers";
 
 const icon = {
   className: "w-5 h-5 text-inherit",
@@ -48,7 +49,7 @@ export const routes = [
         icon: <UserCircleIcon {...icon} />,
         name: "Ustozlar",
         path: "/teachers",
-        element: <Students />,
+        element: <Teachers />,
       },
       {
         icon: <UserCircleIcon {...icon} />,

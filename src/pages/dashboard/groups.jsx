@@ -11,7 +11,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export function Groups() {
   return (
@@ -55,9 +55,9 @@ export function Groups() {
               <Typography>Description</Typography>
               <Typography>
                 <Button className="mt-6">
-                  <NavLink to="/groups/lessons/0e9b53ad-0aa3-43a6-bb06-b697efd25fd2">
+                  <Link to="/groups/lessons/0e9b53ad-0aa3-43a6-bb06-b697efd25fd2">
                     Darsga o'tish
-                  </NavLink>
+                  </Link>
                 </Button>
               </Typography>
             </CardBody>

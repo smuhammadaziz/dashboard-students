@@ -20,7 +20,7 @@ const websiteViewsChart = {
     },
     xaxis: {
       ...chartsConfig.xaxis,
-      categories: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
+      categories: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
     },
   },
 };
@@ -31,7 +31,7 @@ const dailySalesChart = {
   series: [
     {
       name: "Haftalik",
-      data: [450, 600, 350, 250, 100, 290, 370, 230, 500],
+      data: [450, 600, 350, 250, 100, 290, 370],
     },
   ],
   options: {
@@ -45,17 +45,7 @@ const dailySalesChart = {
     },
     xaxis: {
       ...chartsConfig.xaxis,
-      categories: [
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
-      ],
+      categories: ["Du", "Se", "Chor", "Pay", "Ju", "Sha", "Yak"],
     },
   },
 };

@@ -8,6 +8,8 @@ import {
 } from "@heroicons/react/24/solid";
 
 import { Home, Groups, Students } from "@/pages/dashboard";
+import Schedule from "./pages/dashboard/schedule";
+import Homeworks from "./pages/dashboard/homeworks";
 
 const icon = {
   className: "w-5 h-5 text-inherit",
@@ -39,8 +41,8 @@ export const routes = [
       {
         icon: <TableCellsIcon {...icon} />,
         name: "dars jadvali",
-        path: "/notifactions",
-        element: <Home />,
+        path: "/schedule",
+        element: <Schedule />,
       },
       {
         icon: <UserCircleIcon {...icon} />,
@@ -52,7 +54,7 @@ export const routes = [
         icon: <UserCircleIcon {...icon} />,
         name: "Uyga vazifalar",
         path: "/homeworks",
-        element: <Students />,
+        element: <Homeworks />,
       },
     ],
   },

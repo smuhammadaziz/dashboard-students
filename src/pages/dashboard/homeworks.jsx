@@ -9,7 +9,19 @@ import {
   Button,
 } from "@material-tailwind/react";
 
+import { Fragment, useState } from "react";
+import {
+  Dialog,
+  DialogHeader,
+  DialogBody,
+  DialogFooter,
+} from "@material-tailwind/react";
+import misol3 from "../../assets/misol3.png";
+
 export default function Homeworks() {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(!open);
   return (
     <div className="mt-12 flex">
       <Card className="max-w-[24rem] overflow-hidden">
@@ -32,9 +44,33 @@ export default function Homeworks() {
           <Typography variant="lead" color="gray" className="mt-3 font-normal">
             Trigonometrik tenglamalarga oid misollar yechish
           </Typography>
-          <Button variant="gradient" className="mt-6">
-            Ko'rish
-          </Button>
+          <Fragment>
+            <Button onClick={handleOpen} variant="gradient" className="mt-6">
+              Ko'rish
+            </Button>
+            <Dialog open={open} handler={handleOpen}>
+              <DialogHeader>Trigonometrik tengsizlik.</DialogHeader>
+              <DialogBody divider>
+                <p>130-140 misollar</p>
+                <Button className="block" variant="outlined ">
+                  Uy vazifani yuklab olish
+                </Button>
+              </DialogBody>
+              <DialogFooter>
+                <Button
+                  variant="text"
+                  color="red"
+                  onClick={handleOpen}
+                  className="mr-1"
+                >
+                  <span>Cancel</span>
+                </Button>
+                <Button variant="gradient" color="green" onClick={handleOpen}>
+                  <span>Confirm</span>
+                </Button>
+              </DialogFooter>
+            </Dialog>
+          </Fragment>
         </CardBody>
 
         <CardFooter className="flex items-center justify-between">

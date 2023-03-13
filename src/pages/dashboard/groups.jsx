@@ -140,7 +140,9 @@ export function Groups() {
               </Typography>
               <Typography>Description</Typography>
               <Typography>
-                <Button className="mt-6">Darsga o'tish</Button>
+                <NavLink to="/dashboard/groups/lessons/341e6e7d-7c98-41bf-8881-a45670423867">
+                  <Button className="mt-6">Darsga o'tish</Button>
+                </NavLink>
               </Typography>
             </CardBody>
             <CardFooter

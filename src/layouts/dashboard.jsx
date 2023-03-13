@@ -39,6 +39,9 @@ export function Dashboard() {
               ))
           )}
         </Routes>
+        <h1 className="mt-12 text-center text-3xl">
+          Boshqaruv paneliga hush kelibsiz
+        </h1>
       </div>
     </div>
   );

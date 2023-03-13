@@ -20,8 +20,10 @@ import misol3 from "../../assets/misol3.png";
 
 export default function Homeworks() {
   const [open, setOpen] = useState(false);
+  const [openn, setOpenn] = useState(false);
 
   const handleOpen = () => setOpen(!open);
+  const handleOpenn = () => setOpenn(!openn);
   return (
     <div className="mt-12 flex">
       <Card className="max-w-[24rem] overflow-hidden">
@@ -106,11 +108,27 @@ export default function Homeworks() {
             Fizika
           </Typography>
           <Typography variant="lead" color="gray" className="mt-3 font-normal">
-            Izotermik jarayonlarga oid masalalar ishlash
+            MOLEKULAR KINETIK NAZARIYA ASOSLARI.
           </Typography>
-          <Button variant="gradient" className="mt-6">
-            Ko'rish
-          </Button>
+          <Fragment>
+            <Button onClick={handleOpenn} variant="gradient" className="mt-6">
+              Ko'rish
+            </Button>
+            <Dialog open={openn} handler={handleOpenn}>
+              <DialogHeader>MOLEKULAR KINETIK NAZARIYA ASOSLARI.</DialogHeader>
+              <DialogBody divider>
+                <p className="p-3">130-140 masalalar</p>
+                <Button className="block" variant="outlined ">
+                  Uy vazifani yuklab olish
+                </Button>
+              </DialogBody>
+              <DialogFooter>
+                <Button variant="gradient" color="green" onClick={handleOpenn}>
+                  <span>Yopish</span>
+                </Button>
+              </DialogFooter>
+            </Dialog>
+          </Fragment>
         </CardBody>
         <CardFooter className="flex items-center justify-between">
           <div className="flex items-center -space-x-3">

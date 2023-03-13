@@ -51,22 +51,14 @@ export default function Homeworks() {
             <Dialog open={open} handler={handleOpen}>
               <DialogHeader>Trigonometrik tengsizlik.</DialogHeader>
               <DialogBody divider>
-                <p>130-140 misollar</p>
+                <p className="p-3">130-140 misollar</p>
                 <Button className="block" variant="outlined ">
                   Uy vazifani yuklab olish
                 </Button>
               </DialogBody>
               <DialogFooter>
-                <Button
-                  variant="text"
-                  color="red"
-                  onClick={handleOpen}
-                  className="mr-1"
-                >
-                  <span>Cancel</span>
-                </Button>
                 <Button variant="gradient" color="green" onClick={handleOpen}>
-                  <span>Confirm</span>
+                  <span>Yopish</span>
                 </Button>
               </DialogFooter>
             </Dialog>
